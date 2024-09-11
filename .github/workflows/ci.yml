@@ -38,11 +38,11 @@ jobs:
           qmk setup -y
           ls ~/qmk_firmware
           # 库名如果和你的不同，请注意要替换
-          cp -r ~/work/qmk-config/keyboards ~/qmk_firmware/
+          cp -r ~/work/qmk-config/qmk-config/keyboards ~/qmk_firmware/
           # 编译原有键盘
           # qmk compile -kb sofle -km via
           # 编译新增加键盘
-          qmk compile -kb keychron/q60/ansi -km default
+          qmk compile -kb keychron/q60/ansi -km vial
 
       - name: Copy assets to Repo
         run: |
