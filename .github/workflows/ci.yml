@@ -74,9 +74,9 @@ jobs:
           find ~/qmk_firmware -maxdepth 1 -name "*.bin" -exec mv '{}' ~/qmk_firmware/firmware \;
           # 如果不是需要 QMK 源代码，可以将下面两行注释掉
           # 将 QMK 源码压缩
-          tar -cvf /home/runner/filename.tar /home/runner/qmk_firmware
+          # tar -cvf /home/runner/filename.tar /home/runner/qmk_firmware
           # 将 QMK 源码的压缩包移动到待上传目录
-          mv /home/runner/filename.tar /home/runner/qmk_firmware/firmware/filename.tar
+          # mv /home/runner/filename.tar /home/runner/qmk_firmware/firmware/filename.tar
 
       - name: Create GitHub release
         uses: marvinpinto/action-automatic-releases@latest
