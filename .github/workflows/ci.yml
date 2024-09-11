@@ -42,8 +42,7 @@ jobs:
           # 编译原有键盘
           # qmk compile -kb sofle -km via
           # 编译新增加键盘
-          make keychron/q60/ansi:vial
-          # qmk compile -kb keychron/q60/ansi -km vial
+          qmk compile -kb keychron/q60/ansi -km vial
 
       - name: Copy assets to Repo
         run: |
